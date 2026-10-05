@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Header Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#1E293B"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Attendance"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Department Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Department"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#475569"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Subject Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Subject"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#475569"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSubject"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Date Selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvSelectedDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date: 2025-01-01"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B" />
+
+            <Button
+                android:id="@+id/btnSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHANGE DATE"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        </LinearLayout>
+
+        <!-- Students Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Students List"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <!-- Students RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="8dp" />
+
+    <!-- Submit Button Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <Button
+            android:id="@+id/btnSubmitAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="SUBMIT ATTENDANCE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

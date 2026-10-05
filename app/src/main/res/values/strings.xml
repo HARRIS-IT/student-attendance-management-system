@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Student Attendance Management</string>
+    <string name="title_login">Attendance Portal</string>
+    <string name="subtitle_login">Student Attendance Management System</string>
+    <string name="select_role">Select Role</string>
+    <string name="role_teacher">Teacher</string>
+    <string name="role_student">Student</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_new_student">New Student? Register Here</string>
+    <string name="title_student_registration">Student Registration</string>
+    <string name="btn_register_student">REGISTER STUDENT</string>
+    <string name="title_teacher_dashboard">Teacher Dashboard</string>
+    <string name="title_mark_attendance">Mark Attendance</string>
+    <string name="title_student_dashboard">Student Dashboard</string>
+    <string name="title_attendance_history">Attendance History</string>
+    <string name="btn_logout">LOGOUT</string>
+</resources>
